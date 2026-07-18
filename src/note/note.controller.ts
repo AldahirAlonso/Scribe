@@ -9,6 +9,7 @@ export class NoteController {
 
   @Post()
   create(@Body() createNoteDto: CreateNoteDto) {
+    console.log(createNoteDto.name);
     return this.noteService.create(createNoteDto);
   }
 
