@@ -1,3 +1,7 @@
+import { IsString } from 'class-validator';
+
 export class CreateNoteDto {
-    name: String
+    
+    @IsString()
+    name: string;
 }
